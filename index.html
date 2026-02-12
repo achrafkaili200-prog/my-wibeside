@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneCompare - Smartphone Comparison</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📱 PhoneCompare</h1>
+        <p class="subtitle">Compare 30+ smartphones side by side and find your perfect match</p>
+        
+        <div class="search-area">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search phones...">
+            </div>
+        </div>
+        
+        <div class="brand-filters">
+            <button class="brand-btn active" data-brand="all">All Brands</button>
+            <button class="brand-btn" data-brand="Apple">Apple</button>
+            <button class="brand-btn" data-brand="Samsung">Samsung</button>
+            <button class="brand-btn" data-brand="Google">Google</button>
+            <button class="brand-btn" data-brand="Xiaomi">Xiaomi</button>
+            <button class="brand-btn" data-brand="OnePlus">OnePlus</button>
+            <button class="brand-btn" data-brand="Sony">Sony</button>
+            <button class="brand-btn" data-brand="Motorola">Motorola</button>
+            <button class="brand-btn" data-brand="Nokia">Nokia</button>
+            <button class="brand-btn" data-brand="Asus">Asus</button>
+        </div>
+        
+        <div class="selection-area">
+            <div class="phone-select">
+                <select id="phone1">
+                    <option value="">Select first phone</option>
+                </select>
+            </div>
+            
+            <div class="vs-circle">VS</div>
+            
+            <div class="phone-select">
+                <select id="phone2">
+                    <option value="">Select second phone</option>
+                </select>
+            </div>
+        </div>
+        
+        <button class="compare-btn" id="compareBtn">
+            <i class="fas fa-chart-bar" style="margin-right: 10px;"></i>
+            Compare Now
+        </button>
+        
+        <div id="comparisonResult" class="comparison-table"></div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
